@@ -1,1 +1,2 @@
 # Clustering-PyCaret-Python
+This project was created to test, learn and use the PyCaret python libraries. I demostrate how we can access different configuration parameters to setup and train our clustering model.

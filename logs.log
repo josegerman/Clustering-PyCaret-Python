@@ -1,0 +1,992 @@
+2024-02-17 10:36:59,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-17 10:36:59,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-17 10:36:59,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-17 10:36:59,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-17 10:37:03,875:INFO:PyCaret ClusteringExperiment
+2024-02-17 10:37:03,875:INFO:Logging name: cluster-default-name
+2024-02-17 10:37:03,875:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-17 10:37:03,875:INFO:version 3.2.0
+2024-02-17 10:37:03,875:INFO:Initializing setup()
+2024-02-17 10:37:03,875:INFO:self.USI: 5372
+2024-02-17 10:37:03,875:INFO:self._variable_keys: {'log_plots_param', 'memory', 'data', 'seed', 'USI', '_ml_usecase', 'gpu_param', 'gpu_n_jobs_param', 'html_param', 'logging_param', 'idx', 'X', 'n_jobs_param', 'exp_name_log', '_available_plots', 'pipeline', 'exp_id'}
+2024-02-17 10:37:03,875:INFO:Checking environment
+2024-02-17 10:37:03,875:INFO:python_version: 3.9.9
+2024-02-17 10:37:03,875:INFO:python_build: ('tags/v3.9.9:ccb0e6a', 'Nov 15 2021 18:08:50')
+2024-02-17 10:37:03,875:INFO:machine: AMD64
+2024-02-17 10:37:03,875:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-17 10:37:03,878:INFO:Memory: svmem(total=16856203264, available=8573202432, percent=49.1, used=8283000832, free=8573202432)
+2024-02-17 10:37:03,878:INFO:Physical Core: 4
+2024-02-17 10:37:03,879:INFO:Logical Core: 8
+2024-02-17 10:37:03,879:INFO:Checking libraries
+2024-02-17 10:37:03,879:INFO:System:
+2024-02-17 10:37:03,879:INFO:    python: 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)]
+2024-02-17 10:37:03,879:INFO:executable: c:\Users\joseg\AppData\Local\Programs\Python\Python39\python.exe
+2024-02-17 10:37:03,879:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-17 10:37:03,879:INFO:PyCaret required dependencies:
+2024-02-17 10:37:04,221:INFO:                 pip: 21.2.4
+2024-02-17 10:37:04,221:INFO:          setuptools: 58.1.0
+2024-02-17 10:37:04,221:INFO:             pycaret: 3.2.0
+2024-02-17 10:37:04,221:INFO:             IPython: 8.18.1
+2024-02-17 10:37:04,221:INFO:          ipywidgets: 8.1.1
+2024-02-17 10:37:04,221:INFO:                tqdm: 4.66.1
+2024-02-17 10:37:04,221:INFO:               numpy: 1.23.5
+2024-02-17 10:37:04,221:INFO:              pandas: 1.5.3
+2024-02-17 10:37:04,221:INFO:              jinja2: 3.1.3
+2024-02-17 10:37:04,221:INFO:               scipy: 1.10.1
+2024-02-17 10:37:04,221:INFO:              joblib: 1.3.2
+2024-02-17 10:37:04,221:INFO:             sklearn: 1.2.2
+2024-02-17 10:37:04,221:INFO:                pyod: 1.1.2
+2024-02-17 10:37:04,221:INFO:            imblearn: 0.12.0
+2024-02-17 10:37:04,221:INFO:   category_encoders: 2.6.3
+2024-02-17 10:37:04,221:INFO:            lightgbm: 4.3.0
+2024-02-17 10:37:04,221:INFO:               numba: 0.59.0
+2024-02-17 10:37:04,221:INFO:            requests: 2.31.0
+2024-02-17 10:37:04,221:INFO:          matplotlib: 3.6.0
+2024-02-17 10:37:04,222:INFO:          scikitplot: 0.3.7
+2024-02-17 10:37:04,222:INFO:         yellowbrick: 1.5
+2024-02-17 10:37:04,222:INFO:              plotly: 5.18.0
+2024-02-17 10:37:04,222:INFO:    plotly-resampler: Not installed
+2024-02-17 10:37:04,222:INFO:             kaleido: 0.2.1
+2024-02-17 10:37:04,222:INFO:           schemdraw: 0.15
+2024-02-17 10:37:04,222:INFO:         statsmodels: 0.14.1
+2024-02-17 10:37:04,222:INFO:              sktime: 0.21.1
+2024-02-17 10:37:04,222:INFO:               tbats: 1.1.3
+2024-02-17 10:37:04,222:INFO:            pmdarima: 2.0.4
+2024-02-17 10:37:04,222:INFO:              psutil: 5.9.8
+2024-02-17 10:37:04,222:INFO:          markupsafe: 2.1.5
+2024-02-17 10:37:04,222:INFO:             pickle5: Not installed
+2024-02-17 10:37:04,222:INFO:         cloudpickle: 3.0.0
+2024-02-17 10:37:04,222:INFO:         deprecation: 2.1.0
+2024-02-17 10:37:04,222:INFO:              xxhash: 3.4.1
+2024-02-17 10:37:04,222:INFO:           wurlitzer: Not installed
+2024-02-17 10:37:04,222:INFO:PyCaret optional dependencies:
+2024-02-17 10:37:05,839:INFO:                shap: 0.44.1
+2024-02-17 10:37:05,839:INFO:           interpret: Not installed
+2024-02-17 10:37:05,839:INFO:                umap: Not installed
+2024-02-17 10:37:05,839:INFO:     ydata_profiling: Not installed
+2024-02-17 10:37:05,839:INFO:  explainerdashboard: 0.4.5
+2024-02-17 10:37:05,839:INFO:             autoviz: Not installed
+2024-02-17 10:37:05,839:INFO:           fairlearn: Not installed
+2024-02-17 10:37:05,839:INFO:          deepchecks: Not installed
+2024-02-17 10:37:05,839:INFO:             xgboost: Not installed
+2024-02-17 10:37:05,839:INFO:            catboost: Not installed
+2024-02-17 10:37:05,839:INFO:              kmodes: Not installed
+2024-02-17 10:37:05,839:INFO:             mlxtend: Not installed
+2024-02-17 10:37:05,839:INFO:       statsforecast: Not installed
+2024-02-17 10:37:05,839:INFO:        tune_sklearn: Not installed
+2024-02-17 10:37:05,839:INFO:                 ray: Not installed
+2024-02-17 10:37:05,839:INFO:            hyperopt: Not installed
+2024-02-17 10:37:05,839:INFO:              optuna: Not installed
+2024-02-17 10:37:05,839:INFO:               skopt: Not installed
+2024-02-17 10:37:05,839:INFO:              mlflow: 2.10.0
+2024-02-17 10:37:05,839:INFO:              gradio: 3.50.0
+2024-02-17 10:37:05,839:INFO:             fastapi: 0.109.1
+2024-02-17 10:37:05,839:INFO:             uvicorn: 0.27.0.post1
+2024-02-17 10:37:05,839:INFO:              m2cgen: Not installed
+2024-02-17 10:37:05,839:INFO:           evidently: Not installed
+2024-02-17 10:37:05,839:INFO:               fugue: Not installed
+2024-02-17 10:37:05,839:INFO:           streamlit: Not installed
+2024-02-17 10:37:05,839:INFO:             prophet: Not installed
+2024-02-17 10:37:05,839:INFO:None
+2024-02-17 10:37:05,839:INFO:Set up data.
+2024-02-17 10:37:05,843:INFO:Set up index.
+2024-02-17 10:37:05,843:INFO:Assigning column types.
+2024-02-17 10:37:05,846:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-17 10:37:05,847:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-17 10:37:05,847:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,847:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-17 10:37:05,847:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,847:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-17 10:37:05,847:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,847:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,848:INFO:Preparing preprocessing pipeline...
+2024-02-17 10:37:05,848:INFO:Set up simple imputation.
+2024-02-17 10:37:05,859:INFO:Finished creating preprocessing pipeline.
+2024-02-17 10:37:05,865:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\joseg\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Alcohol', 'Malic_Acid', 'Ash',
+                                             'Ash_Alcanity', 'Magnesium',
+                                             'Total_Phenols', 'Flavanoids',
+                                             'Nonflavanoid_Phenols',
+                                             'Proanthocyanins',
+                                             'Color_Intensity', 'Hue', 'OD280',
+                                             'Proline'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2024-02-17 10:37:05,865:INFO:Creating final display dataframe.
+2024-02-17 10:37:05,876:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape             (178, 13)
+2   Transformed data shape             (178, 13)
+3         Numeric features                    13
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                 CPU Jobs                    -1
+9                  Use GPU                 False
+10          Log Experiment                 False
+11         Experiment Name  cluster-default-name
+12                     USI                  5372
+2024-02-17 10:37:05,883:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,884:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:37:05,884:INFO:setup() successfully completed in 2.01s...............
+2024-02-17 10:44:37,139:INFO:Initializing create_model()
+2024-02-17 10:44:37,139:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-17 10:44:37,139:INFO:Checking exceptions
+2024-02-17 10:44:37,170:INFO:Importing untrained model
+2024-02-17 10:44:37,173:INFO:K-Means Clustering Imported successfully
+2024-02-17 10:44:37,177:INFO:Fitting Model
+2024-02-17 10:44:37,187:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-17 10:44:37,301:INFO:KMeans(n_clusters=4, random_state=123)
+2024-02-17 10:44:37,301:INFO:create_models() successfully completed......................................
+2024-02-17 10:44:37,304:INFO:Uploading results into container
+2024-02-17 10:44:37,307:INFO:Uploading model into container now
+2024-02-17 10:44:37,312:INFO:_master_model_container: 1
+2024-02-17 10:44:37,312:INFO:_display_container: 2
+2024-02-17 10:44:37,314:INFO:KMeans(n_clusters=4, random_state=123)
+2024-02-17 10:44:37,315:INFO:create_model() successfully completed......................................
+2024-02-17 10:45:31,570:INFO:gpu_param set to False
+2024-02-17 10:45:31,570:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:45:31,570:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 10:48:28,079:INFO:Initializing create_model()
+2024-02-17 10:48:28,079:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, estimator=hclust, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-17 10:48:28,079:INFO:Checking exceptions
+2024-02-17 10:48:28,111:INFO:Importing untrained model
+2024-02-17 10:48:28,116:INFO:Agglomerative Clustering Imported successfully
+2024-02-17 10:48:28,119:INFO:Fitting Model
+2024-02-17 10:48:28,157:INFO:AgglomerativeClustering(n_clusters=4)
+2024-02-17 10:48:28,157:INFO:create_models() successfully completed......................................
+2024-02-17 10:48:28,162:INFO:Uploading results into container
+2024-02-17 10:48:28,164:INFO:Uploading model into container now
+2024-02-17 10:48:28,178:INFO:_master_model_container: 2
+2024-02-17 10:48:28,178:INFO:_display_container: 3
+2024-02-17 10:48:28,178:INFO:AgglomerativeClustering(n_clusters=4)
+2024-02-17 10:48:28,178:INFO:create_model() successfully completed......................................
+2024-02-17 10:50:18,677:INFO:Initializing assign_model()
+2024-02-17 10:50:18,677:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=True)
+2024-02-17 10:50:18,677:INFO:Checking exceptions
+2024-02-17 10:50:18,678:INFO:Determining Trained Model
+2024-02-17 10:50:18,678:INFO:Trained Model : K-Means Clustering
+2024-02-17 10:50:18,678:INFO:Copying data
+2024-02-17 10:50:18,679:INFO:(178, 14)
+2024-02-17 10:50:18,679:INFO:assign_model() successfully completed......................................
+2024-02-17 10:52:53,886:INFO:Initializing plot_model()
+2024-02-17 10:52:53,886:INFO:plot_model(plot=cluster, fold=None, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 10:52:53,890:INFO:Checking exceptions
+2024-02-17 10:52:53,893:INFO:Preloading libraries
+2024-02-17 10:52:53,893:INFO:Copying training dataset
+2024-02-17 10:52:53,893:INFO:Plot type: cluster
+2024-02-17 10:52:53,894:INFO:SubProcess assign_model() called ==================================
+2024-02-17 10:52:53,894:INFO:Initializing assign_model()
+2024-02-17 10:52:53,894:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2024-02-17 10:52:53,894:INFO:Checking exceptions
+2024-02-17 10:52:53,894:INFO:Determining Trained Model
+2024-02-17 10:52:53,894:INFO:Trained Model : K-Means Clustering
+2024-02-17 10:52:53,894:INFO:Copying data
+2024-02-17 10:52:53,903:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2024-02-17 10:52:53,903:INFO:(178, 14)
+2024-02-17 10:52:53,903:INFO:assign_model() successfully completed......................................
+2024-02-17 10:52:53,903:INFO:SubProcess assign_model() end ==================================
+2024-02-17 10:52:53,904:INFO:Fitting PCA()
+2024-02-17 10:52:53,913:INFO:Sorting dataframe
+2024-02-17 10:52:53,914:INFO:Rendering Visual
+2024-02-17 10:52:54,611:INFO:Visual Rendered Successfully
+2024-02-17 10:52:54,723:INFO:plot_model() successfully completed......................................
+2024-02-17 10:54:08,109:INFO:Initializing plot_model()
+2024-02-17 10:54:08,109:INFO:plot_model(plot=elbow, fold=None, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 10:54:08,109:INFO:Checking exceptions
+2024-02-17 10:54:08,113:INFO:Preloading libraries
+2024-02-17 10:54:08,113:INFO:Copying training dataset
+2024-02-17 10:54:08,114:INFO:Plot type: elbow
+2024-02-17 10:54:08,181:INFO:Fitting Model
+2024-02-17 10:54:08,185:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,215:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,251:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,296:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,340:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,380:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,424:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,468:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,516:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 10:54:08,979:INFO:Visual Rendered Successfully
+2024-02-17 10:54:09,145:INFO:plot_model() successfully completed......................................
+2024-02-17 11:03:21,854:INFO:Initializing plot_model()
+2024-02-17 11:03:21,854:INFO:plot_model(plot=silhouette, fold=None, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:03:21,854:INFO:Checking exceptions
+2024-02-17 11:03:21,857:INFO:Preloading libraries
+2024-02-17 11:03:21,858:INFO:Copying training dataset
+2024-02-17 11:03:21,858:INFO:Plot type: silhouette
+2024-02-17 11:03:21,875:INFO:Fitting Model
+2024-02-17 11:03:21,875:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2024-02-17 11:03:22,144:INFO:Visual Rendered Successfully
+2024-02-17 11:03:22,324:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:34,086:INFO:Initializing evaluate_model()
+2024-02-17 11:04:34,086:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-02-17 11:04:34,104:INFO:Initializing plot_model()
+2024-02-17 11:04:34,104:INFO:plot_model(plot=pipeline, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:34,104:INFO:Checking exceptions
+2024-02-17 11:04:34,105:INFO:Preloading libraries
+2024-02-17 11:04:34,105:INFO:Copying training dataset
+2024-02-17 11:04:34,105:INFO:Plot type: pipeline
+2024-02-17 11:04:34,242:INFO:Visual Rendered Successfully
+2024-02-17 11:04:34,394:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:42,099:INFO:Initializing plot_model()
+2024-02-17 11:04:42,099:INFO:plot_model(plot=cluster, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:42,099:INFO:Checking exceptions
+2024-02-17 11:04:42,100:INFO:Preloading libraries
+2024-02-17 11:04:42,100:INFO:Copying training dataset
+2024-02-17 11:04:42,100:INFO:Plot type: cluster
+2024-02-17 11:04:42,100:INFO:SubProcess assign_model() called ==================================
+2024-02-17 11:04:42,101:INFO:Initializing assign_model()
+2024-02-17 11:04:42,101:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2024-02-17 11:04:42,101:INFO:Checking exceptions
+2024-02-17 11:04:42,101:INFO:Determining Trained Model
+2024-02-17 11:04:42,101:INFO:Trained Model : K-Means Clustering
+2024-02-17 11:04:42,101:INFO:Copying data
+2024-02-17 11:04:42,112:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2024-02-17 11:04:42,113:INFO:(178, 14)
+2024-02-17 11:04:42,113:INFO:assign_model() successfully completed......................................
+2024-02-17 11:04:42,113:INFO:SubProcess assign_model() end ==================================
+2024-02-17 11:04:42,115:INFO:Fitting PCA()
+2024-02-17 11:04:42,117:INFO:Sorting dataframe
+2024-02-17 11:04:42,118:INFO:Rendering Visual
+2024-02-17 11:04:42,147:INFO:Visual Rendered Successfully
+2024-02-17 11:04:42,236:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:47,118:INFO:Initializing plot_model()
+2024-02-17 11:04:47,118:INFO:plot_model(plot=tsne, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:47,118:INFO:Checking exceptions
+2024-02-17 11:04:47,119:INFO:Preloading libraries
+2024-02-17 11:04:47,119:INFO:Copying training dataset
+2024-02-17 11:04:47,120:INFO:Plot type: tsne
+2024-02-17 11:04:47,121:INFO:SubProcess assign_model() called ==================================
+2024-02-17 11:04:47,121:INFO:Initializing assign_model()
+2024-02-17 11:04:47,121:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=False, verbose=False)
+2024-02-17 11:04:47,121:INFO:Checking exceptions
+2024-02-17 11:04:47,121:INFO:Determining Trained Model
+2024-02-17 11:04:47,121:INFO:Trained Model : K-Means Clustering
+2024-02-17 11:04:47,121:INFO:Copying data
+2024-02-17 11:04:47,130:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2024-02-17 11:04:47,131:INFO:(178, 14)
+2024-02-17 11:04:47,131:INFO:assign_model() successfully completed......................................
+2024-02-17 11:04:47,131:INFO:SubProcess assign_model() end ==================================
+2024-02-17 11:04:47,131:INFO:Fitting TSNE()
+2024-02-17 11:04:47,682:INFO:Sorting dataframe
+2024-02-17 11:04:47,683:INFO:Rendering Visual
+2024-02-17 11:04:47,756:INFO:Visual Rendered Successfully
+2024-02-17 11:04:47,873:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:50,476:INFO:Initializing plot_model()
+2024-02-17 11:04:50,477:INFO:plot_model(plot=cluster, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:50,477:INFO:Checking exceptions
+2024-02-17 11:04:50,478:INFO:Preloading libraries
+2024-02-17 11:04:50,478:INFO:Copying training dataset
+2024-02-17 11:04:50,478:INFO:Plot type: cluster
+2024-02-17 11:04:50,478:INFO:SubProcess assign_model() called ==================================
+2024-02-17 11:04:50,478:INFO:Initializing assign_model()
+2024-02-17 11:04:50,478:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2024-02-17 11:04:50,478:INFO:Checking exceptions
+2024-02-17 11:04:50,478:INFO:Determining Trained Model
+2024-02-17 11:04:50,479:INFO:Trained Model : K-Means Clustering
+2024-02-17 11:04:50,479:INFO:Copying data
+2024-02-17 11:04:50,487:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2024-02-17 11:04:50,488:INFO:(178, 14)
+2024-02-17 11:04:50,488:INFO:assign_model() successfully completed......................................
+2024-02-17 11:04:50,488:INFO:SubProcess assign_model() end ==================================
+2024-02-17 11:04:50,489:INFO:Fitting PCA()
+2024-02-17 11:04:50,490:INFO:Sorting dataframe
+2024-02-17 11:04:50,491:INFO:Rendering Visual
+2024-02-17 11:04:50,520:INFO:Visual Rendered Successfully
+2024-02-17 11:04:50,607:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:51,765:INFO:Initializing plot_model()
+2024-02-17 11:04:51,765:INFO:plot_model(plot=tsne, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:51,765:INFO:Checking exceptions
+2024-02-17 11:04:51,766:INFO:Preloading libraries
+2024-02-17 11:04:51,766:INFO:Copying training dataset
+2024-02-17 11:04:51,766:INFO:Plot type: tsne
+2024-02-17 11:04:51,766:INFO:SubProcess assign_model() called ==================================
+2024-02-17 11:04:51,767:INFO:Initializing assign_model()
+2024-02-17 11:04:51,767:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=False, verbose=False)
+2024-02-17 11:04:51,767:INFO:Checking exceptions
+2024-02-17 11:04:51,767:INFO:Determining Trained Model
+2024-02-17 11:04:51,767:INFO:Trained Model : K-Means Clustering
+2024-02-17 11:04:51,767:INFO:Copying data
+2024-02-17 11:04:51,777:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2024-02-17 11:04:51,778:INFO:(178, 14)
+2024-02-17 11:04:51,778:INFO:assign_model() successfully completed......................................
+2024-02-17 11:04:51,778:INFO:SubProcess assign_model() end ==================================
+2024-02-17 11:04:51,778:INFO:Fitting TSNE()
+2024-02-17 11:04:52,349:INFO:Sorting dataframe
+2024-02-17 11:04:52,350:INFO:Rendering Visual
+2024-02-17 11:04:52,410:INFO:Visual Rendered Successfully
+2024-02-17 11:04:52,562:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:57,061:INFO:Initializing plot_model()
+2024-02-17 11:04:57,061:INFO:plot_model(plot=elbow, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:57,061:INFO:Checking exceptions
+2024-02-17 11:04:57,062:INFO:Preloading libraries
+2024-02-17 11:04:57,062:INFO:Copying training dataset
+2024-02-17 11:04:57,062:INFO:Plot type: elbow
+2024-02-17 11:04:57,071:INFO:Fitting Model
+2024-02-17 11:04:57,072:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,093:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,117:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,141:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,168:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,190:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,213:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,237:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,262:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2024-02-17 11:04:57,417:INFO:Visual Rendered Successfully
+2024-02-17 11:04:57,505:INFO:plot_model() successfully completed......................................
+2024-02-17 11:04:58,982:INFO:Initializing plot_model()
+2024-02-17 11:04:58,982:INFO:plot_model(plot=silhouette, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:04:58,982:INFO:Checking exceptions
+2024-02-17 11:04:58,984:INFO:Preloading libraries
+2024-02-17 11:04:58,985:INFO:Copying training dataset
+2024-02-17 11:04:58,985:INFO:Plot type: silhouette
+2024-02-17 11:04:58,994:INFO:Fitting Model
+2024-02-17 11:04:58,994:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2024-02-17 11:04:59,090:INFO:Visual Rendered Successfully
+2024-02-17 11:04:59,177:INFO:plot_model() successfully completed......................................
+2024-02-17 11:05:00,389:INFO:Initializing plot_model()
+2024-02-17 11:05:00,390:INFO:plot_model(plot=distance, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:05:00,390:INFO:Checking exceptions
+2024-02-17 11:05:00,391:INFO:Preloading libraries
+2024-02-17 11:05:00,391:INFO:Copying training dataset
+2024-02-17 11:05:00,391:INFO:Plot type: distance
+2024-02-17 11:05:00,413:INFO:Fitting Model
+2024-02-17 11:05:00,413:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2024-02-17 11:05:00,414:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\manifold\_mds.py:299: FutureWarning:
+
+The default value of `normalized_stress` will change to `'auto'` in version 1.4. To suppress this warning, manually set the value of `normalized_stress`.
+
+
+2024-02-17 11:05:00,543:INFO:Visual Rendered Successfully
+2024-02-17 11:05:00,632:INFO:plot_model() successfully completed......................................
+2024-02-17 11:05:06,811:INFO:Initializing plot_model()
+2024-02-17 11:05:06,811:INFO:plot_model(plot=distribution, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:05:06,811:INFO:Checking exceptions
+2024-02-17 11:05:06,812:INFO:Preloading libraries
+2024-02-17 11:05:06,813:INFO:Copying training dataset
+2024-02-17 11:05:06,813:INFO:Plot type: distribution
+2024-02-17 11:05:06,813:INFO:SubProcess assign_model() called ==================================
+2024-02-17 11:05:06,813:INFO:Initializing assign_model()
+2024-02-17 11:05:06,813:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=False)
+2024-02-17 11:05:06,813:INFO:Checking exceptions
+2024-02-17 11:05:06,813:INFO:Determining Trained Model
+2024-02-17 11:05:06,813:INFO:Trained Model : K-Means Clustering
+2024-02-17 11:05:06,813:INFO:Copying data
+2024-02-17 11:05:06,814:INFO:(178, 14)
+2024-02-17 11:05:06,814:INFO:assign_model() successfully completed......................................
+2024-02-17 11:05:06,814:INFO:SubProcess assign_model() end ==================================
+2024-02-17 11:05:06,814:INFO:Sorting dataframe
+2024-02-17 11:05:06,815:INFO:Rendering Visual
+2024-02-17 11:05:06,904:INFO:Visual Rendered Successfully
+2024-02-17 11:05:06,992:INFO:plot_model() successfully completed......................................
+2024-02-17 11:05:10,573:INFO:Initializing plot_model()
+2024-02-17 11:05:10,573:INFO:plot_model(plot=pipeline, fold=None, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, system=True)
+2024-02-17 11:05:10,573:INFO:Checking exceptions
+2024-02-17 11:05:10,574:INFO:Preloading libraries
+2024-02-17 11:05:10,574:INFO:Copying training dataset
+2024-02-17 11:05:10,574:INFO:Plot type: pipeline
+2024-02-17 11:05:10,618:INFO:Visual Rendered Successfully
+2024-02-17 11:05:10,707:INFO:plot_model() successfully completed......................................
+2024-02-17 11:07:42,771:INFO:Initializing predict_model()
+2024-02-17 11:07:42,771:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, estimator=KMeans(n_clusters=4, random_state=123), ml_usecase=None)
+2024-02-17 11:09:27,304:INFO:Initializing get_config()
+2024-02-17 11:09:27,304:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=None)
+2024-02-17 11:11:17,818:INFO:Initializing get_config()
+2024-02-17 11:11:17,818:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=seed)
+2024-02-17 11:11:17,818:INFO:Variable:  returned as 123
+2024-02-17 11:11:17,818:INFO:get_config() successfully completed......................................
+2024-02-17 11:12:38,827:INFO:Initializing get_config()
+2024-02-17 11:12:38,828:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=seed)
+2024-02-17 11:12:38,828:INFO:Variable:  returned as 123
+2024-02-17 11:12:38,828:INFO:get_config() successfully completed......................................
+2024-02-17 11:12:38,828:INFO:Initializing set_config()
+2024-02-17 11:12:38,829:INFO:set_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=seed, value=786, kwargs={})
+2024-02-17 11:12:38,829:INFO:Global variable: seed updated to 786
+2024-02-17 11:12:38,829:INFO:set_config() successfully completed......................................
+2024-02-17 11:12:38,829:INFO:Initializing get_config()
+2024-02-17 11:12:38,829:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=seed)
+2024-02-17 11:12:38,829:INFO:Variable:  returned as 786
+2024-02-17 11:12:38,829:INFO:get_config() successfully completed......................................
+2024-02-17 11:15:50,986:INFO:Initializing get_config()
+2024-02-17 11:15:50,986:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=X_train_transformed)
+2024-02-17 11:15:51,005:INFO:Variable: X_train returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000      127.0           2.80   
+1      13.20        1.78  2.14     11.200000      100.0           2.65   
+2      13.16        2.36  2.67     18.600000      101.0           2.80   
+3      14.37        1.95  2.50     16.799999      113.0           3.85   
+4      13.24        2.59  2.87     21.000000      118.0           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000       95.0           1.68   
+174    13.40        3.91  2.48     23.000000      102.0           1.80   
+175    13.27        4.28  2.26     20.000000      120.0           1.59   
+176    13.17        2.59  2.37     20.000000      120.0           1.65   
+177    14.13        4.10  2.74     24.500000       96.0           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92   1065.0  
+1     3.40   1050.0  
+2     3.17   1185.0  
+3     3.45   1480.0  
+4     2.93    735.0  
+..     ...      ...  
+173   1.74    740.0  
+174   1.56    750.0  
+175   1.56    835.0  
+176   1.62    840.0  
+177   1.60    560.0  
+
+[178 rows x 13 columns]
+2024-02-17 11:15:51,005:INFO:get_config() successfully completed......................................
+2024-02-17 11:16:13,680:INFO:Initializing get_config()
+2024-02-17 11:16:13,680:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=X_train)
+2024-02-17 11:16:13,680:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-02-17 11:16:13,680:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning:
+
+Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+
+
+2024-02-17 11:16:13,689:INFO:Variable:  returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000        127           2.80   
+1      13.20        1.78  2.14     11.200000        100           2.65   
+2      13.16        2.36  2.67     18.600000        101           2.80   
+3      14.37        1.95  2.50     16.799999        113           3.85   
+4      13.24        2.59  2.87     21.000000        118           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000         95           1.68   
+174    13.40        3.91  2.48     23.000000        102           1.80   
+175    13.27        4.28  2.26     20.000000        120           1.59   
+176    13.17        2.59  2.37     20.000000        120           1.65   
+177    14.13        4.10  2.74     24.500000         96           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92     1065  
+1     3.40     1050  
+2     3.17     1185  
+3     3.45     1480  
+4     2.93      735  
+..     ...      ...  
+173   1.74      740  
+174   1.56      750  
+175   1.56      835  
+176   1.62      840  
+177   1.60      560  
+
+[178 rows x 13 columns]
+2024-02-17 11:16:13,689:INFO:get_config() successfully completed......................................
+2024-02-17 11:16:43,455:INFO:Initializing get_config()
+2024-02-17 11:16:43,455:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=X_train_transformed)
+2024-02-17 11:16:43,478:INFO:Variable: X_train returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000      127.0           2.80   
+1      13.20        1.78  2.14     11.200000      100.0           2.65   
+2      13.16        2.36  2.67     18.600000      101.0           2.80   
+3      14.37        1.95  2.50     16.799999      113.0           3.85   
+4      13.24        2.59  2.87     21.000000      118.0           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000       95.0           1.68   
+174    13.40        3.91  2.48     23.000000      102.0           1.80   
+175    13.27        4.28  2.26     20.000000      120.0           1.59   
+176    13.17        2.59  2.37     20.000000      120.0           1.65   
+177    14.13        4.10  2.74     24.500000       96.0           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92   1065.0  
+1     3.40   1050.0  
+2     3.17   1185.0  
+3     3.45   1480.0  
+4     2.93    735.0  
+..     ...      ...  
+173   1.74    740.0  
+174   1.56    750.0  
+175   1.56    835.0  
+176   1.62    840.0  
+177   1.60    560.0  
+
+[178 rows x 13 columns]
+2024-02-17 11:16:43,478:INFO:get_config() successfully completed......................................
+2024-02-17 11:16:50,682:INFO:Initializing get_config()
+2024-02-17 11:16:50,682:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275E6C25850>, variable=X_train)
+2024-02-17 11:16:50,682:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-02-17 11:16:50,682:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning:
+
+Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+
+
+2024-02-17 11:16:50,688:INFO:Variable:  returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000        127           2.80   
+1      13.20        1.78  2.14     11.200000        100           2.65   
+2      13.16        2.36  2.67     18.600000        101           2.80   
+3      14.37        1.95  2.50     16.799999        113           3.85   
+4      13.24        2.59  2.87     21.000000        118           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000         95           1.68   
+174    13.40        3.91  2.48     23.000000        102           1.80   
+175    13.27        4.28  2.26     20.000000        120           1.59   
+176    13.17        2.59  2.37     20.000000        120           1.65   
+177    14.13        4.10  2.74     24.500000         96           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92     1065  
+1     3.40     1050  
+2     3.17     1185  
+3     3.45     1480  
+4     2.93      735  
+..     ...      ...  
+173   1.74      740  
+174   1.56      750  
+175   1.56      835  
+176   1.62      840  
+177   1.60      560  
+
+[178 rows x 13 columns]
+2024-02-17 11:16:50,688:INFO:get_config() successfully completed......................................
+2024-02-17 11:19:38,365:INFO:PyCaret ClusteringExperiment
+2024-02-17 11:19:38,366:INFO:Logging name: cluster-default-name
+2024-02-17 11:19:38,366:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-17 11:19:38,366:INFO:version 3.2.0
+2024-02-17 11:19:38,366:INFO:Initializing setup()
+2024-02-17 11:19:38,366:INFO:self.USI: b30a
+2024-02-17 11:19:38,366:INFO:self._variable_keys: {'log_plots_param', 'memory', 'data', 'seed', 'USI', '_ml_usecase', 'gpu_param', 'gpu_n_jobs_param', 'html_param', 'logging_param', 'idx', 'X', 'n_jobs_param', 'exp_name_log', '_available_plots', 'pipeline', 'exp_id'}
+2024-02-17 11:19:38,366:INFO:Checking environment
+2024-02-17 11:19:38,366:INFO:python_version: 3.9.9
+2024-02-17 11:19:38,366:INFO:python_build: ('tags/v3.9.9:ccb0e6a', 'Nov 15 2021 18:08:50')
+2024-02-17 11:19:38,366:INFO:machine: AMD64
+2024-02-17 11:19:38,366:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-17 11:19:38,370:INFO:Memory: svmem(total=16856203264, available=8181395456, percent=51.5, used=8674807808, free=8181395456)
+2024-02-17 11:19:38,370:INFO:Physical Core: 4
+2024-02-17 11:19:38,370:INFO:Logical Core: 8
+2024-02-17 11:19:38,370:INFO:Checking libraries
+2024-02-17 11:19:38,370:INFO:System:
+2024-02-17 11:19:38,371:INFO:    python: 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)]
+2024-02-17 11:19:38,371:INFO:executable: c:\Users\joseg\AppData\Local\Programs\Python\Python39\python.exe
+2024-02-17 11:19:38,371:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-17 11:19:38,371:INFO:PyCaret required dependencies:
+2024-02-17 11:19:38,371:INFO:                 pip: 21.2.4
+2024-02-17 11:19:38,371:INFO:          setuptools: 58.1.0
+2024-02-17 11:19:38,371:INFO:             pycaret: 3.2.0
+2024-02-17 11:19:38,371:INFO:             IPython: 8.18.1
+2024-02-17 11:19:38,371:INFO:          ipywidgets: 8.1.1
+2024-02-17 11:19:38,371:INFO:                tqdm: 4.66.1
+2024-02-17 11:19:38,371:INFO:               numpy: 1.23.5
+2024-02-17 11:19:38,371:INFO:              pandas: 1.5.3
+2024-02-17 11:19:38,371:INFO:              jinja2: 3.1.3
+2024-02-17 11:19:38,371:INFO:               scipy: 1.10.1
+2024-02-17 11:19:38,371:INFO:              joblib: 1.3.2
+2024-02-17 11:19:38,371:INFO:             sklearn: 1.2.2
+2024-02-17 11:19:38,371:INFO:                pyod: 1.1.2
+2024-02-17 11:19:38,371:INFO:            imblearn: 0.12.0
+2024-02-17 11:19:38,371:INFO:   category_encoders: 2.6.3
+2024-02-17 11:19:38,371:INFO:            lightgbm: 4.3.0
+2024-02-17 11:19:38,371:INFO:               numba: 0.59.0
+2024-02-17 11:19:38,371:INFO:            requests: 2.31.0
+2024-02-17 11:19:38,372:INFO:          matplotlib: 3.6.0
+2024-02-17 11:19:38,372:INFO:          scikitplot: 0.3.7
+2024-02-17 11:19:38,372:INFO:         yellowbrick: 1.5
+2024-02-17 11:19:38,372:INFO:              plotly: 5.18.0
+2024-02-17 11:19:38,372:INFO:    plotly-resampler: Not installed
+2024-02-17 11:19:38,372:INFO:             kaleido: 0.2.1
+2024-02-17 11:19:38,372:INFO:           schemdraw: 0.15
+2024-02-17 11:19:38,372:INFO:         statsmodels: 0.14.1
+2024-02-17 11:19:38,372:INFO:              sktime: 0.21.1
+2024-02-17 11:19:38,372:INFO:               tbats: 1.1.3
+2024-02-17 11:19:38,372:INFO:            pmdarima: 2.0.4
+2024-02-17 11:19:38,372:INFO:              psutil: 5.9.8
+2024-02-17 11:19:38,372:INFO:          markupsafe: 2.1.5
+2024-02-17 11:19:38,372:INFO:             pickle5: Not installed
+2024-02-17 11:19:38,372:INFO:         cloudpickle: 3.0.0
+2024-02-17 11:19:38,372:INFO:         deprecation: 2.1.0
+2024-02-17 11:19:38,372:INFO:              xxhash: 3.4.1
+2024-02-17 11:19:38,372:INFO:           wurlitzer: Not installed
+2024-02-17 11:19:38,372:INFO:PyCaret optional dependencies:
+2024-02-17 11:19:38,372:INFO:                shap: 0.44.1
+2024-02-17 11:19:38,373:INFO:           interpret: Not installed
+2024-02-17 11:19:38,373:INFO:                umap: Not installed
+2024-02-17 11:19:38,373:INFO:     ydata_profiling: Not installed
+2024-02-17 11:19:38,373:INFO:  explainerdashboard: 0.4.5
+2024-02-17 11:19:38,373:INFO:             autoviz: Not installed
+2024-02-17 11:19:38,373:INFO:           fairlearn: Not installed
+2024-02-17 11:19:38,373:INFO:          deepchecks: Not installed
+2024-02-17 11:19:38,373:INFO:             xgboost: Not installed
+2024-02-17 11:19:38,373:INFO:            catboost: Not installed
+2024-02-17 11:19:38,373:INFO:              kmodes: Not installed
+2024-02-17 11:19:38,373:INFO:             mlxtend: Not installed
+2024-02-17 11:19:38,373:INFO:       statsforecast: Not installed
+2024-02-17 11:19:38,373:INFO:        tune_sklearn: Not installed
+2024-02-17 11:19:38,373:INFO:                 ray: Not installed
+2024-02-17 11:19:38,373:INFO:            hyperopt: Not installed
+2024-02-17 11:19:38,373:INFO:              optuna: Not installed
+2024-02-17 11:19:38,373:INFO:               skopt: Not installed
+2024-02-17 11:19:38,373:INFO:              mlflow: 2.10.0
+2024-02-17 11:19:38,373:INFO:              gradio: 3.50.0
+2024-02-17 11:19:38,373:INFO:             fastapi: 0.109.1
+2024-02-17 11:19:38,373:INFO:             uvicorn: 0.27.0.post1
+2024-02-17 11:19:38,373:INFO:              m2cgen: Not installed
+2024-02-17 11:19:38,373:INFO:           evidently: Not installed
+2024-02-17 11:19:38,373:INFO:               fugue: Not installed
+2024-02-17 11:19:38,373:INFO:           streamlit: Not installed
+2024-02-17 11:19:38,373:INFO:             prophet: Not installed
+2024-02-17 11:19:38,374:INFO:None
+2024-02-17 11:19:38,374:INFO:Set up data.
+2024-02-17 11:19:38,380:INFO:Set up index.
+2024-02-17 11:19:38,381:INFO:Assigning column types.
+2024-02-17 11:19:38,383:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-17 11:19:38,383:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-17 11:19:38,383:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,384:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-17 11:19:38,384:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,384:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-17 11:19:38,384:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,384:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,385:INFO:Preparing preprocessing pipeline...
+2024-02-17 11:19:38,385:INFO:Set up simple imputation.
+2024-02-17 11:19:38,386:INFO:Set up feature normalization.
+2024-02-17 11:19:38,403:INFO:Finished creating preprocessing pipeline.
+2024-02-17 11:19:38,406:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\joseg\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Alcohol', 'Malic_Acid', 'Ash',
+                                             'Ash_Alcanity', 'Magnesium',
+                                             'Total_Phenols', 'Flavanoids',
+                                             'Nonflavanoid_Phenols',
+                                             'Proanthocyanins',
+                                             'Color_Intensity', 'Hue', 'OD280',
+                                             'Proline'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler()))])
+2024-02-17 11:19:38,406:INFO:Creating final display dataframe.
+2024-02-17 11:19:38,417:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape             (178, 13)
+2   Transformed data shape             (178, 13)
+3         Numeric features                    13
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                minmax
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  cluster-default-name
+14                     USI                  b30a
+2024-02-17 11:19:38,424:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,425:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-17 11:19:38,425:INFO:setup() successfully completed in 0.06s...............
+2024-02-17 11:19:42,831:INFO:Initializing get_config()
+2024-02-17 11:19:42,831:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275F386FC70>, variable=X_train_transformed)
+2024-02-17 11:19:42,850:INFO:Variable: X_train returned as       Alcohol  Malic_Acid       Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0    0.842105    0.191700  0.572193      0.257732   0.619565       0.627586   
+1    0.571053    0.205534  0.417112      0.030928   0.326087       0.575862   
+2    0.560526    0.320158  0.700535      0.412371   0.336957       0.627586   
+3    0.878947    0.239130  0.609626      0.319588   0.467391       0.989655   
+4    0.581579    0.365613  0.807487      0.536082   0.521739       0.627586   
+..        ...         ...       ...           ...        ...            ...   
+173  0.705263    0.970356  0.582888      0.510309   0.271739       0.241379   
+174  0.623684    0.626482  0.598930      0.639175   0.347826       0.282759   
+175  0.589474    0.699605  0.481283      0.484536   0.543478       0.210345   
+176  0.563158    0.365613  0.540107      0.484536   0.543478       0.231034   
+177  0.815790    0.664032  0.737968      0.716495   0.282609       0.368965   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity  \
+0      0.573840              0.283019         0.593060         0.372014   
+1      0.510549              0.245283         0.274448         0.264505   
+2      0.611814              0.320755         0.757098         0.375427   
+3      0.664557              0.207547         0.558360         0.556314   
+4      0.495781              0.490566         0.444795         0.259386   
+..          ...                   ...              ...              ...   
+173    0.056962              0.735849         0.205047         0.547782   
+174    0.086498              0.566038         0.315457         0.513652   
+175    0.073840              0.566038         0.296530         0.761092   
+176    0.071730              0.754717         0.331230         0.684300   
+177    0.088608              0.811321         0.296530         0.675768   
+
+          Hue     OD280   Proline  
+0    0.455285  0.970696  0.561341  
+1    0.463415  0.780220  0.550642  
+2    0.447154  0.695971  0.646933  
+3    0.308943  0.798535  0.857347  
+4    0.455285  0.608059  0.325963  
+..        ...       ...       ...  
+173  0.130081  0.172161  0.329529  
+174  0.178862  0.106227  0.336662  
+175  0.089431  0.106227  0.397290  
+176  0.097561  0.128205  0.400856  
+177  0.105691  0.120879  0.201141  
+
+[178 rows x 13 columns]
+2024-02-17 11:19:42,850:INFO:get_config() successfully completed......................................
+2024-02-17 11:19:48,064:INFO:Initializing get_config()
+2024-02-17 11:19:48,064:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275F386FC70>, variable=X_train)
+2024-02-17 11:19:48,065:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-02-17 11:19:48,065:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning:
+
+Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+
+
+2024-02-17 11:19:48,070:INFO:Variable:  returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000        127           2.80   
+1      13.20        1.78  2.14     11.200000        100           2.65   
+2      13.16        2.36  2.67     18.600000        101           2.80   
+3      14.37        1.95  2.50     16.799999        113           3.85   
+4      13.24        2.59  2.87     21.000000        118           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000         95           1.68   
+174    13.40        3.91  2.48     23.000000        102           1.80   
+175    13.27        4.28  2.26     20.000000        120           1.59   
+176    13.17        2.59  2.37     20.000000        120           1.65   
+177    14.13        4.10  2.74     24.500000         96           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92     1065  
+1     3.40     1050  
+2     3.17     1185  
+3     3.45     1480  
+4     2.93      735  
+..     ...      ...  
+173   1.74      740  
+174   1.56      750  
+175   1.56      835  
+176   1.62      840  
+177   1.60      560  
+
+[178 rows x 13 columns]
+2024-02-17 11:19:48,071:INFO:get_config() successfully completed......................................
+2024-02-17 11:21:44,600:INFO:Initializing get_config()
+2024-02-17 11:21:44,601:INFO:get_config(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000275F386FC70>, variable=X_train)
+2024-02-17 11:21:44,601:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-02-17 11:21:44,601:WARNING:c:\Users\joseg\AppData\Local\Programs\Python\Python39\lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning:
+
+Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+
+
+2024-02-17 11:21:44,610:INFO:Variable:  returned as      Alcohol  Malic_Acid   Ash  Ash_Alcanity  Magnesium  Total_Phenols  \
+0      14.23        1.71  2.43     15.600000        127           2.80   
+1      13.20        1.78  2.14     11.200000        100           2.65   
+2      13.16        2.36  2.67     18.600000        101           2.80   
+3      14.37        1.95  2.50     16.799999        113           3.85   
+4      13.24        2.59  2.87     21.000000        118           2.80   
+..       ...         ...   ...           ...        ...            ...   
+173    13.71        5.65  2.45     20.500000         95           1.68   
+174    13.40        3.91  2.48     23.000000        102           1.80   
+175    13.27        4.28  2.26     20.000000        120           1.59   
+176    13.17        2.59  2.37     20.000000        120           1.65   
+177    14.13        4.10  2.74     24.500000         96           2.05   
+
+     Flavanoids  Nonflavanoid_Phenols  Proanthocyanins  Color_Intensity   Hue  \
+0          3.06                  0.28             2.29             5.64  1.04   
+1          2.76                  0.26             1.28             4.38  1.05   
+2          3.24                  0.30             2.81             5.68  1.03   
+3          3.49                  0.24             2.18             7.80  0.86   
+4          2.69                  0.39             1.82             4.32  1.04   
+..          ...                   ...              ...              ...   ...   
+173        0.61                  0.52             1.06             7.70  0.64   
+174        0.75                  0.43             1.41             7.30  0.70   
+175        0.69                  0.43             1.35            10.20  0.59   
+176        0.68                  0.53             1.46             9.30  0.60   
+177        0.76                  0.56             1.35             9.20  0.61   
+
+     OD280  Proline  
+0     3.92     1065  
+1     3.40     1050  
+2     3.17     1185  
+3     3.45     1480  
+4     2.93      735  
+..     ...      ...  
+173   1.74      740  
+174   1.56      750  
+175   1.56      835  
+176   1.62      840  
+177   1.60      560  
+
+[178 rows x 13 columns]
+2024-02-17 11:21:44,610:INFO:get_config() successfully completed......................................
